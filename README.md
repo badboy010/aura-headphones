@@ -63,9 +63,8 @@ npm start
 - Regularly clean the headphones.
 - Keep them stored in a cool, dry place.
 
-## Contributing
-We welcome contributions from everyone! If you would like to help, please see our [Contributing Guidelines](CONTRIBUTING.md).
-
+## Live 
+https://aura-headphones-yu4.caffeine.xyz/
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
