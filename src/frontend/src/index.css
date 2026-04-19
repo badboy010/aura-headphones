@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    /* Neon green-black dark theme */
+    --background: 0.09 0 0;
+    --foreground: 0.98 0 0;
+    --card: 0.13 0 0;
+    --card-foreground: 0.98 0 0;
+    --popover: 0.15 0 0;
+    --popover-foreground: 0.98 0 0;
+    --primary: 0.89 0.25 135;
+    --primary-foreground: 0.09 0 0;
+    --secondary: 0.18 0 0;
+    --secondary-foreground: 0.98 0 0;
+    --muted: 0.18 0 0;
+    --muted-foreground: 0.62 0 0;
+    --accent: 0.89 0.25 135;
+    --accent-foreground: 0.09 0 0;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.22 0 0;
+    --input: 0.22 0 0;
+    --ring: 0.89 0.25 135;
+    --chart-1: 0.89 0.25 135;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.11 0 0;
+    --sidebar-foreground: 0.98 0 0;
+    --sidebar-primary: 0.89 0.25 135;
+    --sidebar-primary-foreground: 0.09 0 0;
+    --sidebar-accent: 0.18 0 0;
+    --sidebar-accent-foreground: 0.98 0 0;
+    --sidebar-border: 0.22 0 0;
+    --sidebar-ring: 0.89 0.25 135;
+
+    --neon: #b8ff1a;
+    --neon-dim: #b8ff1a40;
+    --neon-glow: 0 0 20px #b8ff1a, 0 0 40px #b8ff1a40;
+    --neon-glow-sm: 0 0 10px #b8ff1a, 0 0 20px #b8ff1a40;
+    --card-glow: 0 0 0 1px #b8ff1a, 0 0 20px #b8ff1a30;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+}
+
+@layer utilities {
+  .neon-text {
+    color: #b8ff1a;
+    text-shadow: 0 0 10px #b8ff1a, 0 0 30px #b8ff1a80;
+  }
+  .neon-border {
+    border: 1px solid #b8ff1a;
+    box-shadow: 0 0 15px #b8ff1a40, inset 0 0 10px #b8ff1a10;
+  }
+  .neon-btn {
+    background-color: #b8ff1a;
+    color: #0b0b0b;
+    box-shadow: 0 0 20px #b8ff1a, 0 0 40px #b8ff1a40;
+    transition: all 0.2s ease;
+  }
+  .neon-btn:hover {
+    box-shadow: 0 0 30px #b8ff1a, 0 0 60px #b8ff1a60;
+    transform: translateY(-1px);
+  }
+  .card-hover:hover {
+    border-color: #b8ff1a;
+    box-shadow: 0 0 0 1px #b8ff1a, 0 0 25px #b8ff1a30;
+    transform: translateY(-4px);
+  }
+  .hero-gradient {
+    background: linear-gradient(
+      to right,
+      rgba(11, 11, 11, 0.95) 0%,
+      rgba(11, 11, 11, 0.7) 50%,
+      rgba(11, 11, 11, 0.2) 100%
+    );
+  }
+}
